@@ -1,0 +1,10 @@
+ahoj:A
+ jojo::1,3
+ bujo:B
+  jogo::2,7
+  kuku:A
+   momo::4,2
+   jomo::2,5
+ ruku:B
+  buku::1,8
+  bkku::9,1

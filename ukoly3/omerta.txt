@@ -1,0 +1,15 @@
+start:boss
+ pomsta:zlocinec1
+  priznat:zlocinec2
+   priznat::0,-35,-35
+   zapirat::0,-25,-20
+  zapirat:zlocinec2
+   priznat::0,-20,-25
+   zapirat::0,-1,-1
+ nepomsta:zlocinec1
+  priznat:zlocinec2
+   priznat::0,-10,-10
+   zapirat::0,0,-20
+  zapirat:zlocinec2
+   priznat::0,-20,0
+   zapirat::0,-1,-1

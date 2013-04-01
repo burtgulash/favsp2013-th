@@ -1,0 +1,7 @@
+start:zena
+ hokej:muz
+  opera::0,0
+  hokej::1,4
+ opera:muz
+  opera::3,1
+  hokej::0,0
