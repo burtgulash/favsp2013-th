@@ -14,20 +14,22 @@ dané vzdálenosti.
 Příklad použití:
 ----------------
 
-$ python p41.py < seqs.txt
-
-Duel from distance 8 with probabilities:
- d     A     B
- 0 1.000 1.000
- 1 0.500 0.900
- 2 0.300 0.800
- 3 0.200 0.700
- 4 0.100 0.600
- 5 0.050 0.500
- 6 0.040 0.400
- 7 0.010 0.300
- 8 0.009 0.200
-Player B shoots first at distance 3 with probability of hitting: 0.7
+```
+ $ python p41.py < seqs.txt
+ 
+ Duel from distance 8 with probabilities:
+  d     A     B
+  0 1.000 1.000
+  1 0.500 0.900
+  2 0.300 0.800
+  3 0.200 0.700
+  4 0.100 0.600
+  5 0.050 0.500
+  6 0.040 0.400
+  7 0.010 0.300
+  8 0.009 0.200
+ Player B shoots first at distance 3 with probability of hitting: 0.7
+```
 
 
 
@@ -47,10 +49,12 @@ Hráče A zajímá, jestli výstřel, který má úspěšnost (užitek) p(d), je
 1). Užitek hráče A z čekání je tedy 1 - q(d - 1).
 
 Popsáno nerovnicí se hráč A rozhodne vystřelit pokud:
+```
 p(d) >= 1 - q(d - 1)
 
 tj.
 p(d) + q(d - 1) >= 1
+```
 
 Jakmile je tato nerovnost splněna pro hráče A, pak střílí. Symetricky pro hráče
 B.
@@ -59,5 +63,4 @@ B.
 Reference
 ---------
 
-YaleCourses - Backward induction: reputation and duels.
-http://www.youtube.com/watch?v=SE7kP7XZuV4
+1. [YaleCourses - Backward induction: reputation and duels](http://www.youtube.com/watch?v=SE7kP7XZuV4)
