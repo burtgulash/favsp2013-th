@@ -13,7 +13,7 @@ V tomto případě je výstupem smíšená strategie, která závisí na paramet
 Spuštění v konzoli:
 -------------------
     Příklady:
-    ```
+```
         $ cat mat1.txt | python p21.py
         
         9,4 1,3
@@ -25,10 +25,10 @@ Spuštění v konzoli:
         
         mixed equilibria:
         (p, q) =  (0.2727272727272727, 0.6)
-    ```
+```
 
 
-    ```
+```
 	$ cat mat2.txt | python p21.py
 	
         x,5 2,3
@@ -37,7 +37,9 @@ Spuštění v konzoli:
         mixed equilibria:
         (p, q) =  ('4 / (x + 2)', '(-3 + y) / (y + 1)')
 
-    ```
+```
+    
+```
 	$ cat mat3.txt | python p21.py
 	
         5,7 a,b
@@ -45,5 +47,5 @@ Spuštění v konzoli:
         
         mixed equilibria:
         (p, q) =  ('-2 / (a + 3)', '-1 / (b + 5)')
-    ```
+```
 
