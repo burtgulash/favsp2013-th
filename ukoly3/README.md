@@ -12,48 +12,53 @@ být odsazeny pouze pomocí mezer.
 
 Př.: Válka pohlaví
 ------------------
-
+```
 start:zena
- hokej:muz
-  opera::0,0
-  hokej::1,4
- opera:muz
-  opera::3,1
-  hokej::0,0
-
+   hokej:muz
+     opera::0,0
+     hokej::1,4
+   opera:muz
+     opera::3,1
+     hokej::0,0
+```
 
 představuje strom:
 
-               start 
-                 |
-               (zena)
-                 |
-         -----------------
-        |                 |
-      hokej             opera 
-        |                 |
-      (muz)             (muz)
-        |                 |
- -----------        ---------------
-|           |      |               |
-opera     hokej   opera          hokej
-|           |      |               |
-0,0        1,4    3,1             0,0  
-
+```
+                start 
+                  |
+                (zena)
+                  |
+          -----------------
+         |                 |
+       hokej             opera 
+         |                 |
+       (muz)             (muz)
+         |                 |
+  -----------        ---------------
+ |           |      |               |
+ opera     hokej   opera          hokej
+ |           |      |               |
+ 0,0        1,4    3,1             0,0  
+```
 
 ---------------------------------------------------
 
 Výstup programu po příkazu:
 
+```
 $ python p31.py < valka_pohlavi.txt
+```
 
 je vyřešený strom, kde u každého uzlu a listu je nejlepší skóre pro svůj podstrom a SPNE, tedy Nashovo rovnováha vzhledem k podhrám.
 
+```
  start zena [3, 1]
-  opera muz [3, 1]
-   opera  [3, 1]
-   hokej  [0, 0]
-  hokej muz [1, 4]
-   opera  [0, 0]
-   hokej  [1, 4]
+   opera muz [3, 1]
+     opera  [3, 1]
+     hokej  [0, 0]
+   hokej muz [1, 4]
+     opera  [0, 0]
+     hokej  [1, 4]
 Subgame Perfect Nash Equilibrium: ['start', 'opera', 'opera']
+```
